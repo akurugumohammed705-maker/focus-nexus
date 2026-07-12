@@ -3,6 +3,7 @@ import Home from '../pages/Home/Home'
 import Login from '../pages/Auth/Login'
 import Register from '../pages/Auth/Register'
 import Dashboard from '../pages/Dashboard/Dashboard'
+import Profile from '../pages/Dashboard/Profile'
 import Wallet from '../pages/Wallet/Wallet'
 import Services from '../pages/Services/Services'
 import Academy from '../pages/Academy/Academy'
@@ -32,6 +33,14 @@ export default function AppRoutes() {
         element={
           <ProtectedRoute>
             <Dashboard />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/dashboard/profile"
+        element={
+          <ProtectedRoute>
+            <Profile />
           </ProtectedRoute>
         }
       />

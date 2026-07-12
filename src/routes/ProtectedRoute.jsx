@@ -9,7 +9,13 @@ import { useAuth } from '../hooks/useAuth'
 export default function ProtectedRoute({ children, allowedRoles }) {
   const { user, profile, loading } = useAuth()
 
-  if (loading) return null // could render a splash/spinner here
+  if (loading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="w-8 h-8 border-2 border-line border-t-indigo rounded-full animate-spin" />
+      </div>
+    )
+  }
 
   if (!user) return <Navigate to="/login" replace />
 
