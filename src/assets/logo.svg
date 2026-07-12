@@ -1,0 +1,32 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="fnHubGrad" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#F4C065"/>
+      <stop offset="100%" stop-color="#E8A33D"/>
+    </radialGradient>
+  </defs>
+
+  <!-- connecting lines from hub to 6 nodes -->
+  <g stroke="#E8A33D" stroke-width="2.5" stroke-linecap="round" opacity="0.9">
+    <line x1="100" y1="100" x2="100" y2="34"/>
+    <line x1="100" y1="100" x2="157" y2="67"/>
+    <line x1="100" y1="100" x2="157" y2="133"/>
+    <line x1="100" y1="100" x2="100" y2="166"/>
+    <line x1="100" y1="100" x2="43" y2="133"/>
+    <line x1="100" y1="100" x2="43" y2="67"/>
+  </g>
+
+  <!-- 6 module nodes -->
+  <g fill="#161B3D">
+    <circle cx="100" cy="34" r="10"/>
+    <circle cx="157" cy="67" r="10"/>
+    <circle cx="157" cy="133" r="10"/>
+    <circle cx="100" cy="166" r="10"/>
+    <circle cx="43" cy="133" r="10"/>
+    <circle cx="43" cy="67" r="10"/>
+  </g>
+
+  <!-- central hub -->
+  <circle cx="100" cy="100" r="26" fill="url(#fnHubGrad)"/>
+  <text x="100" y="107" font-family="'Space Grotesk', Arial, sans-serif" font-size="18" font-weight="700" fill="#161B3D" text-anchor="middle">FN</text>
+</svg>
