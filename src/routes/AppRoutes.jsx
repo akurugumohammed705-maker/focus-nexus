@@ -23,7 +23,6 @@ export default function AppRoutes() {
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
       <Route path="/marketplace" element={<Marketplace />} />
-      <Route path="/academy" element={<Academy />} />
       <Route path="/community" element={<Community />} />
 
       {/* Authenticated */}
@@ -56,6 +55,14 @@ export default function AppRoutes() {
         element={
           <ProtectedRoute>
             <Services />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/academy"
+        element={
+          <ProtectedRoute>
+            <Academy />
           </ProtectedRoute>
         }
       />
