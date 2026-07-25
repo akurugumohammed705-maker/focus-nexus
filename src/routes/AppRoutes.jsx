@@ -22,7 +22,6 @@ export default function AppRoutes() {
       <Route path="/" element={<Home />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
-      <Route path="/services" element={<Services />} />
       <Route path="/marketplace" element={<Marketplace />} />
       <Route path="/academy" element={<Academy />} />
       <Route path="/community" element={<Community />} />
@@ -49,6 +48,14 @@ export default function AppRoutes() {
         element={
           <ProtectedRoute>
             <Wallet />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/services"
+        element={
+          <ProtectedRoute>
+            <Services />
           </ProtectedRoute>
         }
       />
